@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Outfit", sans-serif;
+}
+
+#menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: white;
+}
+
+#menu li {
+	display: inline;
+	margin: 20px 20px 20px 20px;
+}
+
+header {
+	background-color: #0e0e0e;
+}
+
+/* Section Negro */
+
+#section-negro__titulo {
+	font-size: 3rem;
+	font-weight: 900;
+	grid-area: titulo;
+	display: flex;
+	align-items: center;
+}
+
+#section-negro__texto1 {
+	grid-area: texto1;
+}
+
+#section-negro__texto2 {
+	grid-area: texto2;
+}
+
+#section-1 {
+	background-color: #0e0e0e;
+}
+
+#section-negro {
+	color: white;
+	background-color: #0e0e0e;
+	display: grid;
+	grid-template-areas:
+		"texto1 titulo vacio2"
+		"vacio1 titulo vacio2"
+		"vacio1 titulo texto2";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	max-width: 700px;
+	margin: auto;
+}
+
+/* Section Blanco */
+
+#section-blanco {
+	display: flex;
+	max-width: 300px;
+	margin: auto;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.responsive-img {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+}
+
+.section-blanco__card {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+.section-blanco__card h2 {
+	font-size: 2rem;
+}
+
+.section-blanco__card p {
+	width: 20rem;
+}
